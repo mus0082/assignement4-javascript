@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script2.js"></script>
+        <link rel="icon" type="x-icon" href="images/favicon.ico">
+        <title>Calculator</title>
+</head>
+
+<body>
+        <header>
+
+                <h1>
+                        Assignment 4
+                </h1>
+                <h2>
+                        Basic HTML, CSS & Javascript
+                </h2>
+        </header>
+
+        <div class="hideTheCalculator">
+                <main>
+
+                        <div class="outer-border">
+                                <label for="numbers" id="history"></label>
+                                <div class="container">
+                                        <input type="text" id="calculationMain" name="Numbers" />
+
+                                </div>
+                                <div class="grid-container">
+                                        <div class="button">
+                                                <button type="button" class="button-shape" onclick="WriteNumber('1');">
+                                                        1</button>
+                                        </div>
+                                        <div class="button"><button type="button" class="button-shape"
+                                                        onclick="WriteNumber('2');">
+                                                        2</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('3');"
+                                                        class="button-shape">
+                                                        3</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('4');"
+                                                        class="button-shape">
+                                                        4</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('5');"
+                                                        class="button-shape">
+                                                        5</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('6');"
+                                                        class="button-shape">
+                                                        6</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('7');"
+                                                        class="button-shape">
+                                                        7</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('8');"
+                                                        class="button-shape">
+                                                        8</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('9');"
+                                                        class="button-shape">
+                                                        9</button></div>
+                                        <div class="button"><button type="button" onclick="WriteNumber('0');"
+                                                        class="button-shape">
+                                                        0</button></div>
+                                        <div class="button"><button type="button" onclick="withOperator('+');"
+                                                        class="button-shape">
+                                                        +</button></div>
+                                        <div class="button"><button type="button" onclick="withOperator('-');"
+                                                        class="button-shape">
+                                                        -</button></div>
+                                        <div class="button"><button type="button" onclick="withOperator('*');"
+                                                        class="button-shape">
+                                                        x</button></div>
+                                        <div class="button"><button type="button" onclick="withOperator('/');"
+                                                        class="button-shape">
+                                                        /</button></div>
+                                        <div class="button"><button type="button" class="button-shape"
+                                                        onclick="clearBtn();">
+                                                        C</button></div>
+                                        <div class="button buttonForEquals"><button type="button"
+                                                        onclick="EqualOperator();" class="button-equalShape">
+                                                        =</button></div>
+                                </div>
+                        </div>
+
+                </main>
+        </div>
+        <footer>
+                <button type="button" class="footerBtn" onclick="hideShowCalculator('none');">
+                        Hide Calculator</button>
+                <button type="button" class="footerBtn" onclick="hideShowCalculator('block');">
+                        Show Calculator</button>
+
+        </footer>
+
+</body>
+
+</html>
